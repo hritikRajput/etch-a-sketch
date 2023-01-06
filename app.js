@@ -54,7 +54,8 @@ function drawGrid(size) {
     }
     let squares = document.querySelectorAll('.square');
     squares.forEach(square => {
-        square.addEventListener('mouseenter', changeColor)
+        square.addEventListener('mouseenter', changeColor);
+        square.addEventListener('touchstart', changeColor);
     })
 }
 
